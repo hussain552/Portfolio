@@ -4,11 +4,10 @@ import { AcademicCapIcon, CheckBadgeIcon } from '@heroicons/react/24/outline';
 import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import salesforce from '../assets/images/Certicications/salesforce-cerf.jpg'
-import python from '../assets/images/Certicications/pyhton-certf.jpg'
+import salesforce from '../assets/images/Certicications/salesforce-cerf.jpg';
+import python from '../assets/images/Certicications/pyhton-certf.jpg';
 
 const Certifications = () => {
-
   const certifications = [
     {
       "title": "Salesforce Developer Virtual Internship",
@@ -18,16 +17,16 @@ const Certifications = () => {
       "skills": ["Salesforce", "Trailhead", "Developer", "Virtual Internship"], 
       "image": salesforce,
       "url": "https://smartinternz.com/internships/salesforce_certificates/2e57db4ed5a2c4833d214b85655137b2"
-  },
-  {
-    "title": "The Complete Python Bootcamp From Zero to Hero in Python",
-    "date": "Jan. 12, 2023",
-    "credentialId": "UC-8d85064b-f1f6-44ce-834c-3214e5cc7828",
-    "description": "This course covers a comprehensive range of Python topics, from fundamental concepts to advanced techniques.",
-    "skills": ["Python", "Bootcamp"],
-    "image": python,
-    "url": "https://udemy.com/certificate/UC-8d85064b-f1f6-44ce-834c-3214e5cc7828" 
-}
+    },
+    {
+      "title": "The Complete Python Bootcamp From Zero to Hero in Python",
+      "date": "Jan. 12, 2023",
+      "credentialId": "UC-8d85064b-f1f6-44ce-834c-3214e5cc7828",
+      "description": "This course covers a comprehensive range of Python topics, from fundamental concepts to advanced techniques.",
+      "skills": ["Python", "Bootcamp"],
+      "image": python,
+      "url": "https://udemy.com/certificate/UC-8d85064b-f1f6-44ce-834c-3214e5cc7828" 
+    }
   ];
 
   return (
@@ -69,8 +68,9 @@ const Certifications = () => {
                   {cert.url && cert.url !== '#' && (
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                       <a
-                        href="#"
-                        onClick={() => window.open(cert.url, '_blank')}
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 cursor-pointer flex items-center"
                       >
                         <CheckBadgeIcon className="w-5 h-5 mr-2" />
