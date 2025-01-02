@@ -3,14 +3,9 @@ import { motion } from "framer-motion";
 import { FaHackerrank } from "react-icons/fa";
 
 import { CIcon } from "@coreui/icons-react";
-import {
-  cibLinkedin,
-  cibLeetcode,
-  cibHackerrank,
-  cibGithub,
-} from "@coreui/icons"; // Specific LeetCode icon
 
-// import LeetcodeIcon from '../assets/images/leetcode2025.jpg'
+import { cibLeetcode,cibGithub, cibLinkedin,cibHackerrank} from '@coreui/icons'; // Specific LeetCode icon
+
 import {
   CodeBracketIcon,
   CommandLineIcon,
@@ -109,7 +104,6 @@ const About = () => {
       icon: "ContestIcon", // Replace with actual icon variable
     },
   ];
-
   const socialLinks = [
     {
       name: "LinkedIn",
@@ -190,34 +184,32 @@ const About = () => {
                   </a>
 
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                    {socialLinks.map((link) => (
-                      <a
-                        key={link.name}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group relative"
-                      >
-                        <div
-                          className="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-gray-700 shadow-lg 
+                  {socialLinks.map((link) => (
+  <a
+    key={link.name}
+    href={link.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative"
+  >
+    <div
+      className="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-gray-700 shadow-lg 
                  border-2 border-transparent group-hover:border-blue-500 dark:group-hover:border-blue-400
                  transform transition-all duration-500 ease-in-out 
                  hover:scale-125 hover:rotate-12 hover:shadow-xl hover:bg-blue-100 dark:hover:bg-blue-900"
-                        >
-                          {React.cloneElement(link.icon, {
-                            className:
-                              "w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-300",
-                          })}
-                        </div>
-                        <span
-                          className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 
+    >
+      {React.cloneElement(link.icon, { className: "w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-300" })}
+    </div>
+    <span
+      className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 
                  opacity-0 group-hover:opacity-100 transition-opacity duration-300 
                  text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap"
-                        >
-                          {link.name}
-                        </span>
-                      </a>
-                    ))}
+    >
+      {link.name}
+    </span>
+  </a>
+))}
+
                   </div>
                 </div>
               </div>
