@@ -1,6 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaHackerrank } from "react-icons/fa";
+
+import { CIcon } from "@coreui/icons-react";
+import {
+  cibLinkedin,
+  cibLeetcode,
+  cibHackerrank,
+  cibGithub,
+} from "@coreui/icons"; // Specific LeetCode icon
+
 // import LeetcodeIcon from '../assets/images/leetcode2025.jpg'
 import {
   CodeBracketIcon,
@@ -10,14 +19,13 @@ import {
   LightBulbIcon,
 } from "@heroicons/react/24/outline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faHackerrank,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faGithub,
+//   faLinkedin,
+//   faHackerrank,
+// } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../assets/images/profile.jpg";
-
 
 const About = () => {
   const whatIDo = [
@@ -81,12 +89,12 @@ const About = () => {
     },
   ];
 
-  const  achievements = [
+  const achievements = [
     {
       title: "Solved 300+ DSA Problems on Leetcode",
       description:
         "Successfully solved over 300 data structures and algorithms (DSA) problems on Leetcode, improving problem-solving skills and mastering various algorithmic techniques.",
-      icon: "leet", 
+      icon: "leet",
     },
     {
       title: "5-Stars in Python on HackerRank",
@@ -98,32 +106,31 @@ const About = () => {
       title: "Competitive Programming Contests",
       description:
         "Participated in multiple contests on Codeforces, CodeChef, and Leetcode, honing competitive programming skills and ranking among top participants.",
-      icon: 'ContestIcon', // Replace with actual icon variable
+      icon: "ContestIcon", // Replace with actual icon variable
     },
   ];
-  
 
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/hussain_shaik_18786", // Updated LinkedIn URL
-      icon: faLinkedin,
+      url: "https://www.linkedin.com/in/hussain_shaik_18786",
+      icon: <CIcon icon={cibLinkedin} />,
     },
     {
       name: "GitHub",
-      url: "https://github.com/hussain552", // Updated GitHub URL
-      icon: faGithub,
+      url: "https://github.com/hussain552",
+      icon: <CIcon icon={cibGithub} />,
     },
     {
       name: "HackerRank",
-      url: "https://www.hackerrank.com/hussain_shaik", // Updated HackerRank URL
-      icon: faHackerrank,
+      url: "https://www.hackerrank.com/hussain_shaik",
+      icon: <CIcon icon={cibHackerrank} />,
     },
-    // {
-    //   name: 'Linktree',
-    //   url: 'https://linktr.ee/hussain_shaik_18786', // Updated Linktree URL
-    //   icon: faLinkedin,
-    // },
+    {
+      name: "LeetCode",
+      url: "https://leetcode.com/hussain_shaik",
+      icon: <CIcon icon={cibLeetcode} />, // LeetCode icon
+    },
   ];
 
   return (
@@ -160,14 +167,13 @@ const About = () => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="flex-shrink-0"
                 >
-      <div className="p-0.5 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-  <img
-    src={profileImage}
-    alt="Profile"
-    className="w-64 h-64 rounded-full object-cover bg-white shadow-lg"
-  />
-</div>
-
+                  <div className="p-0.5 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                    <img
+                      src={profileImage}
+                      alt="Profile"
+                      className="w-64 h-64 rounded-full object-cover bg-white shadow-lg"
+                    />
+                  </div>
                 </motion.div>
 
                 <div className="flex flex-col items-center md:items-start gap-6">
@@ -193,22 +199,20 @@ const About = () => {
                         className="group relative"
                       >
                         <div
-                          className="w-12 h-12 flex items-center justify-center rounded-lg bg-white dark:bg-gray-700 shadow-md 
-                                     border border-gray-200 dark:border-gray-600 
-                                     transform transition-all duration-300 
-                                     hover:scale-110 hover:shadow-lg hover:border-blue-500 dark:hover:border-blue-400"
+                          className="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-gray-700 shadow-lg 
+                 border-2 border-transparent group-hover:border-blue-500 dark:group-hover:border-blue-400
+                 transform transition-all duration-500 ease-in-out 
+                 hover:scale-125 hover:rotate-12 hover:shadow-xl hover:bg-blue-100 dark:hover:bg-blue-900"
                         >
-                          <FontAwesomeIcon
-                            icon={link.icon}
-                            className="w-6 h-6 text-gray-600 dark:text-gray-300 
-                                     group-hover:text-blue-500 dark:group-hover:text-blue-400 
-                                     transition-colors duration-300"
-                          />
+                          {React.cloneElement(link.icon, {
+                            className:
+                              "w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-300",
+                          })}
                         </div>
                         <span
                           className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 
-                                       opacity-0 group-hover:opacity-100 transition-opacity duration-300 
-                                       text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap"
+                 opacity-0 group-hover:opacity-100 transition-opacity duration-300 
+                 text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap"
                         >
                           {link.name}
                         </span>
