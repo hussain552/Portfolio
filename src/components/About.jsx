@@ -4,7 +4,7 @@ import { FaHackerrank } from "react-icons/fa";
 
 import { CIcon } from "@coreui/icons-react";
 
-import { cibLeetcode,cibGithub, cibLinkedin,cibHackerrank} from '@coreui/icons'; // Specific LeetCode icon
+import { cibLeetcode,cibGithub, cibLinkedin,cibHackerrank} from '@coreui/icons'; 
 
 import {
   CodeBracketIcon,
