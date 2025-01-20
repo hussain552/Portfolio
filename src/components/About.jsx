@@ -107,7 +107,7 @@ const About = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/hussain_shaik_18786",
+      url: "https://www.linkedin.com/in/hussain-sk/",
       icon: <CIcon icon={cibLinkedin} />,
     },
     {
@@ -122,7 +122,7 @@ const About = () => {
     },
     {
       name: "LeetCode",
-      url: "https://leetcode.com/hussain_shaik",
+      url: "https://leetcode.com/u/Hussain9494/",
       icon: <CIcon icon={cibLeetcode} />, // LeetCode icon
     },
   ];
