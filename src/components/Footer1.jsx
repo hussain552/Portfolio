@@ -13,7 +13,7 @@ const Footer1 = () => {
           <div className="flex gap-4 justify-center">
             {/* LinkedIn */}
             <a
-              href=" https://www.linkedin.com/in/hussain-sk/"
+              href="https://www.linkedin.com/in/hussain-sk/"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group"
