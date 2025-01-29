@@ -117,7 +117,7 @@ const About = () => {
     },
     {
       name: "HackerRank",
-      url: "https://www.hackerrank.com/hussain_shaik",
+      url: "https://www.hackerrank.com/profile/shahidshaik372",
       icon: <CIcon icon={cibHackerrank} />,
     },
     {
