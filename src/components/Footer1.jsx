@@ -52,6 +52,7 @@ const Footer1 = () => {
             {/* HackerRank */}
             <a
               href="https://www.hackerrank.com/profile/shahidshaik372"
+              
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group"

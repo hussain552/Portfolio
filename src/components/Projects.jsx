@@ -11,7 +11,7 @@ const Projects = () => {
       description: 'The Blood Bank Donor Management System is a full-stack web application designed to connect blood donors and recipients efficiently. The system allows users to register as blood donors, view available blood groups, and schedule donations. It also facilitates easy communication between donors and blood banks. The application features user authentication, real-time data handling, and a user-friendly interface. Built with the MERN stack (MongoDB, Express, React, Node.js), it integrates responsive design principles and ensures secure user data management. The platform aims to streamline the blood donation process and enhance donor-recipient matching.',
       image: bloodBankImage, // Replace with the actual image variable
       technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Bcrypt', 'Redux', 'Tailwind CSS'],
-      codeLink: 'https://github.com/hussain552',
+      codeLink: 'https://github.com/hussain552/Blood-Bank-Donor-Management-System--Backend.git',
       status: 'Completed',
       type: 'Major',
     },
