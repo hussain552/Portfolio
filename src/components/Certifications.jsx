@@ -4,6 +4,8 @@ import { AcademicCapIcon, CheckBadgeIcon } from '@heroicons/react/24/outline';
 import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
+import journey_to_employment from '../assets/images/Certicications/Journey_to_emp.jpg';
 import salesforce from '../assets/images/Certicications/salesforce-cerf.jpg';
 import python from '../assets/images/Certicications/pyhton-certf.jpg';
 
@@ -26,6 +28,15 @@ const Certifications = () => {
       "skills": ["Python", "Bootcamp"],
       "image": python,
       "url": "https://udemy.com/certificate/UC-8d85064b-f1f6-44ce-834c-3214e5cc7828" 
+    },
+    {
+      "title": "Journey to Employment",
+      "date": "Aug. 2024",
+      "credentialId": null,
+      "description": "Participated in the 'Journey to Employment' program organized by Salesforce and MVGR College of Engineering from February to August 2024.",
+      "skills": ["Career Development", "Employment Readiness", "Salesforce"],
+      "image": journey_to_employment, 
+      "url": null
     }
   ];
 
