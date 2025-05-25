@@ -21,7 +21,7 @@ const Projects = () => {
       description: 'This social media application enables seamless connection and communication, allowing users to share photos, videos, and updates. It features real-time messaging, personalized feeds, and community engagement tools, fostering meaningful interactions while ensuring a user-friendly, secure, and engaging experience.',
       image: socialmedia, // Replace with the actual image variable
       technologies: ['JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit'],
-      liveLink: '#', // Replace with actual live link
+      liveLink: 'https://frontend-blood-bannk.onrender.com/', // Replace with actual live link
       codeLink: 'https://github.com/hussain552/SOcial_media',
       status: 'Completed',
       type: 'Major',
