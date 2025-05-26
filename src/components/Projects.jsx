@@ -11,6 +11,7 @@ const Projects = () => {
       description: 'The Blood Bank Donor Management System is a full-stack web application designed to connect blood donors and recipients efficiently. The system allows users to register as blood donors, view available blood groups, and schedule donations. It also facilitates easy communication between donors and blood banks. The application features user authentication, real-time data handling, and a user-friendly interface. Built with the MERN stack (MongoDB, Express, React, Node.js), it integrates responsive design principles and ensures secure user data management. The platform aims to streamline the blood donation process and enhance donor-recipient matching.',
       image: bloodBankImage, // Replace with the actual image variable
       technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Bcrypt', 'Redux', 'Tailwind CSS'],
+      liveLink:'https://frontend-blood-bannk.onrender.com/',
       codeLink: 'https://github.com/hussain552/Blood-Bank-Donor-Management-System--Backend.git',
       status: 'Completed',
       type: 'Major',
@@ -21,7 +22,7 @@ const Projects = () => {
       description: 'This social media application enables seamless connection and communication, allowing users to share photos, videos, and updates. It features real-time messaging, personalized feeds, and community engagement tools, fostering meaningful interactions while ensuring a user-friendly, secure, and engaging experience.',
       image: socialmedia, // Replace with the actual image variable
       technologies: ['JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit'],
-      liveLink: 'https://frontend-blood-bannk.onrender.com/', // Replace with actual live link
+      liveLink: '#', // Replace with actual live link
       codeLink: 'https://github.com/hussain552/SOcial_media',
       status: 'Completed',
       type: 'Major',
